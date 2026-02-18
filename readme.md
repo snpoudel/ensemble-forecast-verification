@@ -24,7 +24,9 @@ Open and run `forecast_verification.ipynb`. The notebook walks through data load
 
 The notebook loads streamflow observations and ensemble forecasts from `site_1.csv` and visualizes them as a time series.
 
-![Ensemble Forecast Time Series](figure/timeseries.png)
+<p align="center">
+  <img src="figure/timeseries.png" alt="Ensemble Forecast Time Series" width="650">
+</p>
 
 ---
 
@@ -38,13 +40,17 @@ The probability plot assesses how well the forecast distribution matches the obs
 
 In the discrete case used here, a set of thresholds is defined, and for each threshold the fraction of observations exceeding it is computed. If the forecast is reliable, 10% of observations should exceed the 10% threshold, 20% should exceed the 20% threshold, and so on. The resulting observed CDF is plotted against the uniform CDF. Points falling close to the 1:1 diagonal indicate a reliable forecast.
 
-![Probability Plot](figure/probability_plot.png)
+<p align="center">
+  <img src="figure/probability_plot.png" alt="Probability Plot" width="650">
+</p>
 
 #### b) Deviation Plot
 
 The deviation plot shows by how much the observed CDF deviates from the uniform CDF at each threshold — effectively a residual view of the probability plot. Points near the horizontal zero line indicate a reliable forecast.
 
-![Deviation Plot](figure/deviation_plot.png)
+<p align="center">
+  <img src="figure/deviation_plot.png" alt="Deviation Plot" width="650">
+</p>
 
 #### c) Ranked Histogram
 
@@ -52,12 +58,14 @@ For each time step, the observation is ranked among the ensemble members by sort
 
 If the histogram is approximately uniform — each rank occurring with roughly equal frequency — the ensemble forecast is well-calibrated and reliable, meaning the observation is equally likely to fall anywhere within the ensemble. Deviations from uniformity (e.g., U-shaped, skewed, or peaked distributions) suggest the forecast is biased or poorly dispersed.
 
-![Ranked Histogram](figure/rank_histogram.png)
+<p align="center">
+  <img src="figure/rank_histogram.png" alt="Ranked Histogram" width="650">
+</p>
 
 The combined reliability diagram below summarizes all three views together and provides guidance on how to interpret them:
 
 <p align="center">
-  <img src="figure/reliability_diagrams.png" alt="Reliability Diagrams" width="600">
+  <img src="figure/reliability_diagrams.png" alt="Reliability Diagrams" width="650">
 </p>
 
 ---
