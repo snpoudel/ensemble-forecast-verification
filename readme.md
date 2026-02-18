@@ -86,4 +86,4 @@ RI is the mean absolute deviation of the observed CDF from the uniform CDF, as s
 
 $$\text{RI} = \frac{1}{N} \sum_{i=1}^{N} \left| \text{CDF}_{\text{obs},i} - \text{CDF}_{\text{uniform},i} \right|$$
 
-Where $N$ is the number of thresholds, $\text{CDF}_{\text{obs},i}$ is the observed CDF at threshold $i$, and $\text{CDF}_{\text{uniform},i}$ is the uniform CDF at threshold $i$.
+Where N is the number of thresholds, CDF_obs,i is the observed CDF at threshold i, and CDF_uniform,i is the uniform CDF at threshold i.
