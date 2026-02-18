@@ -56,7 +56,9 @@ If the histogram is approximately uniform — each rank occurring with roughly e
 
 The combined reliability diagram below summarizes all three views together and provides guidance on how to interpret them:
 
-![Reliability Diagrams](figure/reliability_diagrams.png)
+<p align="center">
+  <img src="figure/reliability_diagrams.png" alt="Reliability Diagrams" width="600">
+</p>
 
 ---
 
