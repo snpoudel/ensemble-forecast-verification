@@ -52,7 +52,7 @@ For each time step, the observation is ranked among the ensemble members by sort
 
 If the histogram is approximately uniform — each rank occurring with roughly equal frequency — the ensemble forecast is well-calibrated and reliable, meaning the observation is equally likely to fall anywhere within the ensemble. Deviations from uniformity (e.g., U-shaped, skewed, or peaked distributions) suggest the forecast is biased or poorly dispersed.
 
-![Ranked Histogram](figure/ranked_histogram.png)
+![Ranked Histogram](figure/rank_histogram.png)
 
 The combined reliability diagram below summarizes all three views together and provides guidance on how to interpret them:
 
@@ -86,4 +86,4 @@ RI is the mean absolute deviation of the observed CDF from the uniform CDF, as s
 
 $$\text{RI} = \frac{1}{N} \sum_{i=1}^{N} \left| \text{CDF}_{\text{obs},i} - \text{CDF}_{\text{uniform},i} \right|$$
 
-Where $\text{CDF}_{\text{obs},i}$ is the observed CDF at threshold $i$, $\text{CDF}_{\text{uniform},i}$ is the corresponding uniform CDF value, and $N$ is the number of thresholds.
+Where $N$ is the number of thresholds, $\text{CDF}_{\text{obs},i}$ is the observed CDF at threshold $i$, and $\text{CDF}_{\text{uniform},i}$ is the uniform CDF at threshold $i$.
